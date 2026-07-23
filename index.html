@@ -2446,11 +2446,7 @@ body{font-feature-settings:"kern","liga","calt";}
 
 /* — HERO · foil dorado animado en la línea itálica — */
 .hero-title .l2 span{
-  background:linear-gradient(100deg,#8a6d3b 0%,#b59a63 20%,#f2e3bd 40%,#d9c39a 54%,#a3854c 72%,#ecd9ab 100%);
-  background-size:230% auto;
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
-  animation:foilSweep 7s linear infinite;
+  color:#8a6d3b;-webkit-text-fill-color:#8a6d3b;
 }
 @keyframes foilSweep{to{background-position:-230% center;}}
 
@@ -2561,6 +2557,11 @@ body{font-feature-settings:"kern","liga","calt";}
 @media(max-width:360px){
   .whom-cards{grid-template-columns:1fr!important;}
 }
+.end-text{text-wrap:balance;} .docente p{text-wrap:balance;} .whynow p{text-wrap:balance;}
+.hero .pframe .pimg{filter:saturate(1.03) contrast(1.03) brightness(1.02)!important;mix-blend-mode:normal!important;}
+.hero .pframe::after{opacity:0!important;}
+.hero .pframe::before{display:none!important;}
+.docente .d-photo-img{background:var(--portrait) 50% 14%/cover no-repeat!important;filter:contrast(1.03) brightness(1.02)!important;}
 </style>
 </head>
 <body>
